@@ -1,1 +1,1 @@
-# Springboot example project to use @SecondaryTable
+# How to use @SecondaryTable
