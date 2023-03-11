@@ -153,5 +153,6 @@ insert into customer (address, mobile_number, name, id) values (?, ?, ?, ?)
 insert into additional_customer_details (account_number, card_number, pan_number, id) values (?, ?, ?, ?)
 ```
 
-
+### Conclusion
+Overall, `@SecondaryTable` is a useful tool in Spring Boot for mapping a single entity to multiple tables and simplifying the management of complex database schemas.
 
