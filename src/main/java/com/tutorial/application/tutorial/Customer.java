@@ -17,32 +17,32 @@ public class Customer {
     @Column(name = "address")
     private String address;
 
-    @Column(name = "mobile_number", length = 10)
+    @Column(name = "mobile_number")
     private String mobileNumber;
 
-    @Column(name = "pan_number", length = 15, table = "additional_customer_details")
+    @Column(name = "pan_number", table = "additional_customer_details")
     private String panNumber;
 
-    @Column(name = "amazon_pay_account_id", table = "additional_customer_details")
-    private Long amazonPayAccountId;
+    @Column(name = "account_number", table = "additional_customer_details")
+    private Long accountNumber;
 
-    @Column(name = "debit_card_number", table = "additional_customer_details")
-    private Long debitCardNumber;
+    @Column(name = "card_number", table = "additional_customer_details")
+    private Long cardNumber;
 
-    public Long getDebitCardNumber() {
-        return debitCardNumber;
+    public Long getAccountNumber() {
+        return accountNumber;
     }
 
-    public void setDebitCardNumber(Long debitCardNumber) {
-        this.debitCardNumber = debitCardNumber;
+    public void setAccountNumber(Long accountNumber) {
+        this.accountNumber = accountNumber;
     }
 
-    public Long getAmazonPayAccountId() {
-        return amazonPayAccountId;
+    public Long getCardNumber() {
+        return cardNumber;
     }
 
-    public void setAmazonPayAccountId(Long amazonPayAccountId) {
-        this.amazonPayAccountId = amazonPayAccountId;
+    public void setCardNumber(Long cardNumber) {
+        this.cardNumber = cardNumber;
     }
 
     public String getPanNumber() {
